@@ -41,7 +41,8 @@ html {
   margin-top: 100px;
   position: relative;
   width: 692px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
+  padding: 40px;
 }
 
 .card {
@@ -154,11 +155,12 @@ img {
   display: flex;
 }
 :root {
-  --colorShadeA: rgb(70, 70, 70);
+  --colorShadeA: rgb(0, 0, 0);
   --colorShadeB: rgb(118, 118, 118);
   --colorShadeC: rgb(201, 201, 201);
-  --colorShadeD: rgb(222, 222, 222);
+  --colorShadeD: rgb(0, 0, 0);
   --colorShadeE: rgb(255, 255, 255);
+  --colorShadeF: rgb(254, 126, 29);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
@@ -196,7 +198,7 @@ button {
 }
 
 button.big-button {
-  padding: 1em 4em;
+  padding: 1em 3em;
   border: 2px solid var(--colorShadeA);
   border-radius: 1em;
   background: var(--colorShadeE);
@@ -220,8 +222,9 @@ button.big-button::before {
 }
 
 button.big-button:hover {
-  background: var(--colorShadeD);
+  background: var(--colorShadeA);
   transform: translate(0, 0.375em);
+  color: white;
 }
 
 button.big-button:hover::before {
