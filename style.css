@@ -38,10 +38,10 @@ html {
 
 .card-container {
   margin: 25px auto 0;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
   width: 692px;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -50,27 +50,36 @@ html {
   position: relative;
   box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
   z-index: 1;
+  display: flex;
 }
 
 .card-body {
   display: inline-block;
   float: left;
   width: 310px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  margin-right: 50px;
+
+  justify-content: space-around;
 }
 
 .card-number {
-  margin-top: 15px;
+  margin: 0px;
 }
 
 .card-circle {
   border: 1px solid #aaa;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   padding: 10px;
-  line-height: 22px;
+  /* line-height: 22px; */
   font-size: 12px;
-  height: 25px;
+  /* height: 25px; */
   text-align: center;
-  width: 70px;
+  width: 50%;
+  display: flex;
 }
 
 .card-author {
@@ -136,12 +145,13 @@ html {
 }
 
 img {
-  width: 30vh;
+  width: 40%;
   height: auto;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
+  display: flex;
 }
 :root {
   --colorShadeA: rgb(70, 70, 70);
@@ -170,22 +180,23 @@ body {
   background: var(--backgroundColor);
 }
 button {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
   cursor: pointer;
   outline: none;
   border: 0;
   vertical-align: middle;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 5.5em;
   color: var(--colorShadeA);
   font-weight: 700;
   text-transform: uppercase;
   font-family: inherit;
+  display: flex;
 }
 
 button.big-button {
-  padding: 1em 2em;
+  padding: 1em 4em;
   border: 2px solid var(--colorShadeA);
   border-radius: 1em;
   background: var(--colorShadeE);
